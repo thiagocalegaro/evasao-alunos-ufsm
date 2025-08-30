@@ -1,0 +1,111 @@
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-overlay.visivel {
+  display: flex;
+}
+
+.modal-content {
+  background: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  width: 90%;
+  max-width: 500px;
+}
+
+.modal-content h3 {
+  margin-top: 0;
+  text-align: center;
+  color: #2c3e50;
+}
+
+.modal-descricao {
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.filtro-grupo {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.filtro-grupo label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+select {
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  background-color: #fff;
+}
+
+.modal-botoes {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+#aplicar-btn {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+#aplicar-btn:hover {
+  background-color: #218838;
+}
+
+#fechar-modal-btn {
+  background-color: #6c757d;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+#fechar-modal-btn:hover {
+  background-color: #5a6268;
+}
+
+#filtro-resumo {
+  text-align: center;
+  margin-bottom: 10px;
+  color: #666;
+  font-style: italic;
+}
+
+.filtro-icone {
+  cursor: pointer;
+  transition: opacity 0.2s ease-in-out;
+  vertical-align: middle;
+}
+
+.filtro-icone:hover {
+  opacity: 0.7;
+}
