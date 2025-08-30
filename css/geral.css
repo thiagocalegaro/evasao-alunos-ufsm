@@ -189,3 +189,32 @@ td a:hover {
   width: 80px;
   height: auto;
 }
+.btn-logout {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #3498db; /* azul principal */
+  color: white;
+  font-size: 15px;
+  border-radius: 6px;
+  padding: 8px 16px;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.btn-logout:hover {
+  background-color: #2a80b9; /* azul mais escuro */
+  transform: translateY(-2px);
+}
+
+.btn-logout:active {
+  transform: translateY(0);
+}
+
+.btn-logout i {
+  font-size: 18px;
+}
+
